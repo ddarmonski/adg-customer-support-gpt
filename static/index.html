@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Azure AI</title>
-    <script type="module" crossorigin src="/assets/index-ef9c3ddc.js"></script>
-    <link rel="stylesheet" href="/assets/index-dabf0132.css">
+    <title>ADG customer support</title>
+    
+    <script src="/src/popup.js"></script>
+    <script>
+      const overlay = document.querySelector('.overlay');
+      const popup = document.querySelector('.popup');
+      const closeBtn = document.querySelector('.close-btn');
+      
+      window.addEventListener('load', function() {
+        overlay.style.display = 'flex';
+      });
+      
+      closeBtn.addEventListener('click', function() {
+        overlay.style.display = 'none';
+      });
+      
+      popup.addEventListener('click', function(event) {
+        event.stopPropagation();
+      });
+      window.addEventListener("load", function () {
+          document.querySelector(".popup").classList.add("show");
+        });
+    </script>
+    <script type="module" crossorigin src="/assets/index-ad0cff38.js"></script>
+    <link rel="stylesheet" href="/assets/index-a5a9da38.css">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+     
+    </div>
     
   </body>
 </html>

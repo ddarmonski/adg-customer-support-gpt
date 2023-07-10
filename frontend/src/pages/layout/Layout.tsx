@@ -23,6 +23,7 @@ const Layout = () => {
     const handleCopyClick = () => {
         navigator.clipboard.writeText(window.location.href);
         setCopyClicked(true);
+        alert("Hello")
     };
 
     useEffect(() => {
@@ -33,6 +34,7 @@ const Layout = () => {
 
     return (
         <div className={styles.layout}>
+            
             <header className={styles.header} role={"banner"}>
                 <div className={styles.headerContainer}>
                     <Stack horizontal verticalAlign="center">
@@ -42,11 +44,11 @@ const Layout = () => {
                             aria-hidden="true"
                         />
                         <Link to="/" className={styles.headerTitleContainer}>
-                            <h1 className={styles.headerTitle}>PHOENIX Chat GPT</h1>
+                            <h1 className={styles.headerTitle}>PHOENIX | ADG</h1>
                         </Link>
                         <div className={styles.shareButtonContainer} role="button" tabIndex={0} aria-label="Share" onClick={handleShareClick} onKeyDown={e => e.key === "Enter" || e.key === " " ? handleShareClick() : null}>
                             <ShareRegular className={styles.shareButton} />
-                            <span className={styles.shareButtonText}>Share</span>
+                            <span className={styles.shareButtonText}>More</span>
                         </div>
                     </Stack>
                 </div>
