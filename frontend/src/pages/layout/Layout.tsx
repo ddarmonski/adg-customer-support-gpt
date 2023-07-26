@@ -23,7 +23,6 @@ const Layout = () => {
     const handleCopyClick = () => {
         navigator.clipboard.writeText(window.location.href);
         setCopyClicked(true);
-        alert("Hello")
     };
 
     useEffect(() => {
@@ -73,7 +72,7 @@ const Layout = () => {
                       }]
                 }}
                 dialogContentProps={{
-                    title: "Share the web app",
+                    title: "Created by AAAI Dev Team",
                     showCloseButton: true
                 }}
             >

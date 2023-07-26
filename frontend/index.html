@@ -6,27 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ADG customer support</title>
     <script type="module" src="/src/index.tsx"></script>
-    <script src="/src/popup.js"></script>
-    <script>
-      const overlay = document.querySelector('.overlay');
-      const popup = document.querySelector('.popup');
-      const closeBtn = document.querySelector('.close-btn');
-      
-      window.addEventListener('load', function() {
-        overlay.style.display = 'flex';
-      });
-      
-      closeBtn.addEventListener('click', function() {
-        overlay.style.display = 'none';
-      });
-      
-      popup.addEventListener('click', function(event) {
-        event.stopPropagation();
-      });
-      window.addEventListener("load", function () {
-          document.querySelector(".popup").classList.add("show");
-        });
-    </script>
+    
   </head>
   <body>
     <div id="root">
